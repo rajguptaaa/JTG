@@ -4,91 +4,496 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JTGeats</title>
+    <title>JTGeats Dashboard</title>
     <link rel="icon" type="image/png" href="assets/JTGeats.svg">
     <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
 </head>
 
 <body>
-    <div>
-        <!-- Home Page -->
-        <div class="home">
-            <nav class="nav-bar">
-                <img src="./assets/JTGeats.svg" alt="JTGeats logo" class="logo-img">
-                <a href="#" target="_self" class="nav-link">Home</a>
-                <a href="#" target="_self" class="nav-link">About</a>
-                <a href="#" target="_self" class="nav-link">Menu</a>
-                <a href="#" target="_self" class="nav-link">Blog</a>
-                <a href="#" target="_self" class="nav-link">Contact</a>
-                <img src="./assets/card.svg" alt="card" class="icon-img">
-                <img src="./assets/card-1.svg" alt="card-1" class="icon-img">
-            </nav>
-            <div class="home-left">
-                <h1>Authentic Home<br>Food in INDIA</h1>
-                <p>JTGeats is a courier service in which authentic home<br> cooked food is delivered to a customer</p>
-                <input type="text" placeholder="Search food you love" class="input-search">
-                <button class="search-btn">Search</button>
+    <!-- Header -->
+    <div class="header-wrapper">
+        <header class="header">
+            <div class="header-left">
+                <img src="/assets/JTGeats.svg" alt="JTGeats LOgo">
             </div>
-            <div class="home-right">
-                <img src="./assets/cooking/cuate.svg" alt="cooking" class="hero-img" />
+            <div class="header-center">
+                <nav class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </nav>
             </div>
+            <div class="header-right">
+                <img src="./assets/Card.svg" alt="Cart" class="cart-icon">
+                <img src="./assets/Card-1.svg" alt="Search" class="search-icon">
+
+            </div>
+        </header>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <div class="hero-wrapper">
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Authentic Home Food in INDIA</h1>
+                    <p>JTGeats is a courier service in which authentic home cooked food is delivered to a customer</p>
+                    <div class="hero-search">
+                        <input type="text" placeholder="Search food you love" class="hero-search-input">
+                        <button class="hero-search-btn">Search</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="./assets/cooking/cuate.svg" alt="Food delivery">
+                </div>
+            </section>
         </div>
+
+        <!-- Home Kitchen -->
         <section class="home-kitchen">
             <h2>Home Kitchen</h2>
             <div class="kitchen-grid">
-
-                <!-- Card 1 -->
-                <div class="card">
-                    <div class="discount">50%</div>
-                    <img src="./assets/unsplash_33GPuoFI7v8.png" alt="Home made pizza">
-                    <div class="card-info">
-                        <h3>Home made pizza</h3>
-                        <p class="price">₹190</p>
-                        <div class="card-footer">
-                            <span class="rating">⭐ 4.7</span>
-                            <span class="time">(50-79 min)</span>
-                            <button class="add-btn">+</button>
+                <div class="kitchen-item">
+                    <img src="./assets/unsplash_MqT0asuoIcU.png" alt="Food">
+                    <div class="item-info">
+                        <div class="name-price">
+                            <span class="item-name">Margherita Pizza</span>
+                            <span class="item-price">₹250</span>
+                        </div>
+                        <div class="rating-cart">
+                            <div class="rating-time">
+                                <span class="rating">⭐ 4.5</span>
+                                <span class="time">25 mins</span>
+                            </div>
+                            <!-- <img src="./assets/iconoir_add-to-cart-2.svg" alt="Add to cart" class="add-cart"> -->
                         </div>
                     </div>
                 </div>
 
-                <!-- Repeat cards for other items -->
-                <div class="card">
-                    <div class="discount">20%</div>
-                    <img src="./assets/unsplash_60nzTP7_hMQ.png" alt="Home made pizza">
-                    <div class="card-info">
-                        <h3>Home made pizza</h3>
-                        <p class="price">₹123</p>
-                        <div class="card-footer">
-                            <span class="rating">⭐ 4.7</span>
-                            <span class="time">(50-79 min)</span>
-                            <button class="add-btn">+</button>
+                <div class="kitchen-item">
+                    <img src="./assets/unsplash_60nzTP7_hMQ.png" alt="Food">
+                    <div class="item-info">
+                        <div class="name-price">
+                            <span class="item-name">Veg Loaded Pizza</span>
+                            <span class="item-price">₹180</span>
+                        </div>
+                        <div class="rating-cart">
+                            <div class="rating-time">
+                                <span class="rating">⭐ 4.2</span>
+                                <span class="time">20 mins</span>
+                            </div>
+                            <!-- <img src="./assets/iconoir_add-to-cart-2.svg" alt="Add to cart" class="add-cart"> -->
                         </div>
                     </div>
                 </div>
 
-                <!-- Add more cards similarly -->
+                <div class="kitchen-item">
+                    <img src="./assets/unsplash_33GPuoFI7v8.png" alt="Food">
+                    <div class="item-info">
+                        <div class="name-price">
+                            <span class="item-name">Cheese Brust Pizza</span>
+                            <span class="item-price">₹150</span>
+                        </div>
+                        <div class="rating-cart">
+                            <div class="rating-time">
+                                <span class="rating">⭐ 4.3</span>
+                                <span class="time">15 mins</span>
+                            </div>
+                            <!-- <img src="./assets/iconoir_add-to-cart-2.svg" alt="Add to cart" class="add-cart"> -->
+                        </div>
+                    </div>
+                </div>
 
+                <div class="kitchen-item">
+                    <img src="./assets/unsplash_CbNAuxSZTFo.png" alt="Food">
+                    <div class="item-info">
+                        <div class="name-price">
+                            <span class="item-name">Olive & Tomato loaded</span>
+                            <span class="item-price">₹220</span>
+                        </div>
+                        <div class="rating-cart">
+                            <div class="rating-time">
+                                <span class="rating">⭐ 4.6</span>
+                                <span class="time">30 mins</span>
+                            </div>
+                            <!-- <img src="./assets/iconoir_add-to-cart-2.svg" alt="Add to cart" class="add-cart"> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kitchen-item">
+                    <img src="./assets/unsplash_sejqj6Eaqe8.png" alt="Food">
+                    <div class="item-info">
+                        <div class="name-price">
+                            <span class="item-name">Chilli pizza</span>
+                            <span class="item-price">₹120</span>
+                        </div>
+                        <div class="rating-cart">
+                            <div class="rating-time">
+                                <span class="rating">⭐ 4.4</span>
+                                <span class="time">10 mins</span>
+                            </div>
+                                <!-- <img src="./assets/iconoir_add-to-cart-2.svg" alt="Add to cart" class="add-cart" width="18" height="18"> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kitchen-item">
+                    <img src="./assets/unsplash_nP11TkjxJ7s.png" alt="Food">
+                    <div class="item-info">
+                        <div class="name-price">
+                            <span class="item-name">Pizza</span>
+                            <span class="item-price">₹80</span>
+                        </div>
+                        <div class="rating-cart">
+                            <div class="rating-time">
+                                <span class="rating">⭐ 4.1</span>
+                                <span class="time">5 mins</span>
+                            </div>
+                            <!-- <img src="./assets/iconoir_add-to-cart-2.svg" alt="Add to cart" class="add-cart"> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kitchen-item">
+                    <img src="./assets/unsplash_UxRhrU8fPHQ.png" alt="Food">
+                    <div class="item-info">
+                        <div class="name-price">
+                            <span class="item-name">Extra Cheese</span>
+                            <span class="item-price">₹100</span>
+                        </div>
+                        <div class="rating-cart">
+                            <div class="rating-time">
+                                <span class="rating">⭐ 4.0</span>
+                                <span class="time">12 mins</span>
+                            </div>
+                            <!-- <img src="./assets/iconoir_add-to-cart-2.svg" alt="Add to cart" class="add-cart"> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kitchen-item">
+                    <img src="./assets/unsplash_Y6OgisiGBjM.png" alt="Food">
+                    <div class="item-info">
+                        <div class="name-price">
+                            <span class="item-name">Mix Veg Pizza</span>
+                            <span class="item-price">₹90</span>
+                        </div>
+                        <div class="rating-cart">
+                            <div class="rating-time">
+                                <span class="rating">⭐ 4.7</span>
+                                <span class="time">8 mins</span>
+                            </div>
+                            <!-- <img src="./assets/iconoir_add-to-cart-2.svg" alt="Add to cart" class="add-cart"> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kitchen-item">
+                    <img src="./assets/pexels-mumma-oyens-8799602 1.png" alt="Food">
+                    <div class="item-info">
+                        <div class="name-price">
+                            <span class="item-name">Butter Chicken</span>
+                            <span class="item-price">₹200</span>
+                        </div>
+                        <div class="rating-cart">
+                            <div class="rating-time">
+                                <span class="rating">⭐ 4.3</span>
+                                <span class="time">22 mins</span>
+                            </div>
+                            <!-- <img src="./assets/iconoir_add-to-cart-2.svg" alt="Add to cart" class="add-cart"> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kitchen-item">
+                    <img src="./assets/pexels-omar-mahmood-106343 1.png" alt="Food">
+                    <div class="item-info">
+                        <div class="name-price">
+                            <span class="item-name">Roasted Chicken</span>
+                            <span class="item-price">₹280</span>
+                        </div>
+                        <div class="rating-cart">
+                            <div class="rating-time">
+                                <span class="rating">⭐ 4.8</span>
+                                <span class="time">35 mins</span>
+                            </div>
+                            <!-- <img src="./assets/iconoir_add-to-cart-2.svg" alt="Add to cart" class="add-cart"> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kitchen-item">
+                    <img src="./assets/unsplash_MqT0asuoIcU-1.png" alt="Food">
+                    <div class="item-info">
+                        <div class="name-price">
+                            <span class="item-name">Pizza</span>
+                            <span class="item-price">₹120</span>
+                        </div>
+                        <div class="rating-cart">
+                            <div class="rating-time">
+                                <span class="rating">⭐ 4.4</span>
+                                <span class="time">18 mins</span>
+                            </div>
+                            <!-- <img src="./assets/iconoir_add-to-cart-2.svg" alt="Add to cart" class="add-cart"> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kitchen-item">
+                    <img src="./assets/unsplash_MqT0asuoIcU.png" alt="Food">
+                    <div class="item-info">
+                        <div class="name-price">
+                            <span class="item-name">Bahubali Pizza</span>
+                            <span class="item-price">₹60</span>
+                        </div>
+                        <div class="rating-cart">
+                            <div class="rating-time">
+                                <span class="rating">⭐ 4.2</span>
+                                <span class="time">10 mins</span>
+                            </div>
+                            <!-- <img src="./assets/iconoir_add-to-cart-2.svg" alt="Add to cart" class="add-cart"> -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
 
 
+
+
         <!-- Popular Items -->
-        <div class="popular-items">
-            <p>Popular Items</p>
-            <div class="popular-list">
-                <!-- Add popular item cards here -->
+        <section class="popular-items">
+            <h2>Popular Items</h2>
+            <div class="slider-container">
+                <img src="./assets/Arrow-1.svg" alt="Previous" class="slider-arrow slider-prev" onclick="slideLeft()">
+                <div class="slider-wrapper">
+                    <div class="slider-track" id="sliderTrack">
+                        <div class="kitchen-item">
+                            <img src="./assets/unsplash_MqT0asuoIcU.png" alt="Food">
+                            <div class="item-info">
+                                <div class="name-price">
+                                    <span class="item-name">Margherita Pizza</span>
+                                    <span class="item-price">₹250</span>
+                                </div>
+                                <div class="rating-cart">
+                                    <div class="rating-time">
+                                        <span class="rating">⭐ 4.5</span>
+                                        <span class="time">25 mins</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kitchen-item">
+                            <img src="./assets/unsplash_60nzTP7_hMQ.png" alt="Food">
+                            <div class="item-info">
+                                <div class="name-price">
+                                    <span class="item-name">Veg Loaded Pizza</span>
+                                    <span class="item-price">₹180</span>
+                                </div>
+                                <div class="rating-cart">
+                                    <div class="rating-time">
+                                        <span class="rating">⭐ 4.2</span>
+                                        <span class="time">20 mins</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kitchen-item">
+                            <img src="./assets/unsplash_33GPuoFI7v8.png" alt="Food">
+                            <div class="item-info">
+                                <div class="name-price">
+                                    <span class="item-name">Pizza</span>
+                                    <span class="item-price">₹150</span>
+                                </div>
+                                <div class="rating-cart">
+                                    <div class="rating-time">
+                                        <span class="rating">⭐ 4.3</span>
+                                        <span class="time">15 mins</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kitchen-item">
+                            <img src="./assets/unsplash_CbNAuxSZTFo.png" alt="Food">
+                            <div class="item-info">
+                                <div class="name-price">
+                                    <span class="item-name">Pizza</span>
+                                    <span class="item-price">₹220</span>
+                                </div>
+                                <div class="rating-cart">
+                                    <div class="rating-time">
+                                        <span class="rating">⭐ 4.6</span>
+                                        <span class="time">30 mins</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kitchen-item">
+                            <img src="./assets/unsplash_sejqj6Eaqe8.png" alt="Food">
+                            <div class="item-info">
+                                <div class="name-price">
+                                    <span class="item-name">VegDelight Pizza</span>
+                                    <span class="item-price">₹120</span>
+                                </div>
+                                <div class="rating-cart">
+                                    <div class="rating-time">
+                                        <span class="rating">⭐ 4.4</span>
+                                        <span class="time">10 mins</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kitchen-item">
+                            <img src="./assets/unsplash_nP11TkjxJ7s.png" alt="Food">
+                            <div class="item-info">
+                                <div class="name-price">
+                                    <span class="item-name">Regular Pizza (x2)</span>
+                                    <span class="item-price">₹80</span>
+                                </div>
+                                <div class="rating-cart">
+                                    <div class="rating-time">
+                                        <span class="rating">⭐ 4.1</span>
+                                        <span class="time">5 mins</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kitchen-item">
+                            <img src="./assets/unsplash_UxRhrU8fPHQ.png" alt="Food">
+                            <div class="item-info">
+                                <div class="name-price">
+                                    <span class="item-name">Cheese Brust Pizza</span>
+                                    <span class="item-price">₹100</span>
+                                </div>
+                                <div class="rating-cart">
+                                    <div class="rating-time">
+                                        <span class="rating">⭐ 4.0</span>
+                                        <span class="time">12 mins</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kitchen-item">
+                            <img src="./assets/unsplash_Y6OgisiGBjM.png" alt="Food">
+                            <div class="item-info">
+                                <div class="name-price">
+                                    <span class="item-name">Olive Rich Pizza</span>
+                                    <span class="item-price">₹90</span>
+                                </div>
+                                <div class="rating-cart">
+                                    <div class="rating-time">
+                                        <span class="rating">⭐ 4.7</span>
+                                        <span class="time">8 mins</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kitchen-item">
+                            <img src="./assets/pexels-mumma-oyens-8799602 1.png" alt="Food">
+                            <div class="item-info">
+                                <div class="name-price">
+                                    <span class="item-name">Butter Chicken</span>
+                                    <span class="item-price">₹200</span>
+                                </div>
+                                <div class="rating-cart">
+                                    <div class="rating-time">
+                                        <span class="rating">⭐ 4.3</span>
+                                        <span class="time">22 mins</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kitchen-item">
+                            <img src="./assets/pexels-omar-mahmood-106343 1.png" alt="Food">
+                            <div class="item-info">
+                                <div class="name-price">
+                                    <span class="item-name">Roasted Chicken</span>
+                                    <span class="item-price">₹280</span>
+                                </div>
+                                <div class="rating-cart">
+                                    <div class="rating-time">
+                                        <span class="rating">⭐ 4.8</span>
+                                        <span class="time">35 mins</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kitchen-item">
+                            <img src="./assets/unsplash_MqT0asuoIcU-1.png" alt="Food">
+                            <div class="item-info">
+                                <div class="name-price">
+                                    <span class="item-name">Family Pizza</span>
+                                    <span class="item-price">₹120</span>
+                                </div>
+                                <div class="rating-cart">
+                                    <div class="rating-time">
+                                        <span class="rating">⭐ 4.4</span>
+                                        <span class="time">18 mins</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="./assets/Arrow.svg" alt="Next" class="slider-arrow slider-next" onclick="slideRight()">
             </div>
-            <button class="request-class">Request a Dish</button>
+        </section>
+
+        <!-- Request Dish Button -->
+        <div class="request-dish-section">
+            <button class="request-dish-btn" onclick="openModal()">Request Dish</button>
         </div>
-        <!-- Video -->
-        <div class="video">
-            <strong>We are providing best<br>home cooked food delivery service.</strong>
-            <p>Away from home and craving the tasty homemade recipes?<br>Choose from a selection of our delicious home
-                cooked dishes</p>
-            <!-- video  -->
+
+        <!-- Request Dish Modal -->
+        <div id="requestModal" class="modal">
+            <div class="modal-content">
+                <h2>Request a Dish</h2>
+                <form>
+                    <input type="text" placeholder="Dish Name" class="modal-input">
+                    <textarea placeholder="Special Instructions" class="modal-textarea"></textarea>
+                    <div class="modal-buttons">
+                        <button type="button" class="modal-btn cancel-btn" onclick="closeModal()">Cancel</button>
+                        <button type="button" class="modal-btn submit-btn" onclick="closeModal()">Submit Request</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- video -->
+        <div class="container">
+            <div class="heading">
+                We are providing best<br>home cooked food delivery service.
+            </div>
+            <div class="subheading">
+                Away from home and craving the tasty homemade recipes?<br>
+                Choose from a selection of our delicious home cooked dishes
+            </div>
+
+            <div class="banner">
+                <video id="video" muted loop playsinline>
+                    <source src="./assets/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img src="./assets/Arrow.svg" alt="Play" class="play-arrow" onclick="toggleVideo()">
+                <img src="./assets/Arrow-1.svg" alt="Pause" class="pause-arrow" onclick="toggleVideo()"
+                    style="display: none;">
+            </div>
         </div>
         <!-- Form -->
         <div class="form-class">
@@ -96,8 +501,10 @@
                 <strong>Do you have a question<br>or want to become a seller?</strong>
                 <p>Fill this form and our manager will contact you in next 48 hours.</p>
                 <form>
-                    <input type="text" placeholder="Your Name" class="form-input" />
-                    <input type="email" placeholder="Your e-mail" class="form-input" />
+                    <div class="form-row">
+                        <input type="text" placeholder="Your Name" class="form-input" />
+                        <input type="email" placeholder="Your e-mail" class="form-input" />
+                    </div>
                     <textarea placeholder="Your message" class="form-textarea"></textarea>
                     <button type="submit" class="form-submit">Submit</button>
                 </form>
@@ -107,21 +514,28 @@
                     alt="bike-img" class="form-img" />
             </div>
         </div>
+
         <!-- Footer -->
-        <div class="footer-div">
-            <footer class="footer">
-                <img src="./assets/JTGeats.svg" alt="JTGeats logo" class="logo-img">
-                <a href="#" target="_self" class="nav-link">Home</a>
-                <a href="#" target="_self" class="nav-link">About</a>
-                <a href="#" target="_self" class="nav-link">Menu</a>
-                <a href="#" target="_self" class="nav-link">Blog</a>
-                <a href="#" target="_self" class="nav-link">Contact</a>
-                <img src="./assets/Facebook.svg" alt="facebook" class="icon-img">
-                <img src="./assets/iconoir_add-to-cart.svg" alt="cart" class="icon-img">
-                <hr>
-            </footer>
-        </div>
-    </div>
+        <footer class="footer">
+            <div class="footer-logo">
+                <img src="./assets/JTGeats.svg" alt="JTGeats" class="footer-logo-img">
+            </div>
+            <nav class="footer-nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Menu</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+                <div class="social-icons">
+                    <img src="./assets/Facebook.svg" alt="Facebook" class="social-icon">
+                    <img src="./assets/iconoir_add-to-cart.svg" alt="Instagram" class="social-icon">
+                </div>
+            </nav>
+            <div class="footer-line"></div>
+        </footer>
+
+    </main>
+
 </body>
 
 </html>
